@@ -1,0 +1,969 @@
+/* SkyMath Game Styles - Migrated from sky-math-pilot(1) */
+
+/* Font import */
+@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Inter:wght@400;700&display=swap');
+
+.font-game {
+  font-family: 'Bungee', cursive;
+}
+
+/* Main Container */
+.sky-math-container {
+  width: 100%;
+  height: 100vh;
+  background-color: #020617;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 2rem;
+  overflow: hidden;
+  position: relative;
+}
+
+@media (min-width: 768px) {
+  .sky-math-container {
+    padding: 2rem;
+  }
+}
+
+/* Background Gradient */
+.sky-math-bg-gradient {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at center, #1e1b4b 0%, #020617 100%);
+}
+
+/* Stars Background */
+.sky-math-stars {
+  position: absolute;
+  inset: 0;
+  opacity: 0.2;
+  background-image: url('https://www.transparenttextures.com/patterns/stardust.png');
+  animation: scroll 40s linear infinite;
+}
+
+.sky-math-stars.animate-warp {
+  animation: warp 0.5s linear infinite;
+}
+
+/* Game Container */
+.sky-math-game-container {
+  position: relative;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 1.5rem;
+  background-color: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(12px);
+  width: 100%;
+  height: 100%;
+  max-width: 1200px;
+  max-height: 900px;
+  aspect-ratio: 4/3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* IDLE Screen */
+.sky-math-idle-screen {
+  position: absolute;
+  inset: 0;
+  z-index: 50;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.9);
+  color: white;
+  padding: 2rem;
+  animation: fadeIn 0.7s ease-in;
+}
+
+.sky-math-title {
+  font-size: clamp(2.25rem, 8vw, 6rem);
+  font-family: 'Bungee', cursive;
+  margin-bottom: 0.5rem;
+  background: linear-gradient(to bottom, #22d3ee, #4f46e5);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-align: center;
+  filter: drop-shadow(0 0 30px rgba(6, 182, 212, 0.4));
+}
+
+@media (min-width: 640px) {
+  .sky-math-title {
+    font-size: clamp(3.75rem, 8vw, 6rem);
+  }
+}
+
+@media (min-width: 768px) {
+  .sky-math-title {
+    font-size: clamp(4rem, 8vw, 6rem);
+  }
+}
+
+.sky-math-subtitle {
+  font-size: clamp(1.25rem, 3vw, 1.875rem);
+  font-family: 'Bungee', cursive;
+  margin-bottom: 3rem;
+  color: #93c5fd;
+  text-align: center;
+  letter-spacing: 0.2em;
+}
+
+@media (min-width: 640px) {
+  .sky-math-subtitle {
+    font-size: clamp(1.5rem, 3vw, 1.875rem);
+  }
+}
+
+@media (min-width: 768px) {
+  .sky-math-subtitle {
+    font-size: clamp(1.875rem, 3vw, 1.875rem);
+    letter-spacing: 0.3em;
+  }
+}
+
+.sky-math-start-btn {
+  position: relative;
+  padding: 1rem 2rem;
+  background-color: #0891b2;
+  border-radius: 9999px;
+  color: white;
+  font-family: 'Bungee', cursive;
+  font-size: clamp(1.25rem, 3vw, 1.875rem);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 40px rgba(8, 145, 178, 0.4);
+}
+
+@media (min-width: 640px) {
+  .sky-math-start-btn {
+    padding: 1.5rem 4rem;
+    font-size: clamp(1.875rem, 3vw, 1.875rem);
+  }
+}
+
+.sky-math-start-btn:hover {
+  background-color: #06b6d4;
+  transform: scale(1.05);
+  box-shadow: 0 0 50px rgba(8, 145, 178, 0.6);
+}
+
+.sky-math-start-btn:active {
+  transform: scale(0.95);
+}
+
+.sky-math-start-btn span {
+  position: relative;
+}
+
+/* Controls */
+.sky-math-controls {
+  margin-top: 4rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  color: rgba(6, 182, 212, 0.5);
+  font-family: ui-monospace, monospace;
+  font-size: 0.5625rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+@media (min-width: 768px) {
+  .sky-math-controls {
+    display: flex;
+    gap: 3rem;
+    font-size: 0.625rem;
+  }
+}
+
+.sky-math-control-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.sky-math-control-key {
+  width: 2rem;
+  height: 2rem;
+  border: 1px solid rgba(6, 182, 212, 0.3);
+  border-radius: 0.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.75rem;
+}
+
+.sky-math-control-key.space {
+  width: 4rem;
+}
+
+/* Pause Menu */
+.sky-math-pause-menu {
+  position: absolute;
+  inset: 0;
+  z-index: 60;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(12px);
+  color: white;
+  animation: zoomIn 0.3s ease-out;
+}
+
+.sky-math-pause-content {
+  background-color: rgba(15, 23, 42, 0.8);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 1.5rem;
+  border-radius: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  width: 90%;
+  max-width: 28rem;
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
+}
+
+@media (min-width: 768px) {
+  .sky-math-pause-content {
+    padding: 3rem;
+  }
+}
+
+.sky-math-pause-title {
+  font-size: clamp(1.875rem, 5vw, 3rem);
+  font-family: 'Bungee', cursive;
+  color: #22d3ee;
+  text-align: center;
+  letter-spacing: -0.025em;
+}
+
+@media (min-width: 768px) {
+  .sky-math-pause-title {
+    font-size: 3rem;
+  }
+}
+
+.sky-math-pause-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+}
+
+.sky-math-pause-btn {
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 1rem;
+  border-radius: 0.75rem;
+  font-family: 'Bungee', cursive;
+  font-size: clamp(1.125rem, 1.25vw, 1.25rem);
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+@media (min-width: 768px) {
+  .sky-math-pause-btn {
+    font-size: 1.25rem;
+  }
+}
+
+.sky-math-pause-btn:hover {
+  background-color: rgba(6, 182, 212, 0.5);
+  transform: scale(1.02);
+}
+
+.sky-math-pause-btn.abort {
+  background-color: rgba(127, 29, 29, 0.2);
+  border-color: rgba(239, 68, 68, 0.3);
+}
+
+.sky-math-pause-btn.abort:hover {
+  background-color: rgba(220, 38, 38, 0.5);
+}
+
+/* Game Over Screen */
+.sky-math-gameover-screen {
+  position: absolute;
+  inset: 0;
+  z-index: 50;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(2, 6, 23, 0.95);
+  color: white;
+  padding: 2rem;
+  animation: fadeIn 0.5s ease-in;
+}
+
+.sky-math-gameover-title {
+  font-size: clamp(2.25rem, 6vw, 3.75rem);
+  font-family: 'Bungee', cursive;
+  margin-bottom: 1rem;
+  color: #ef4444;
+  filter: drop-shadow(0 10px 8px rgba(0, 0, 0, 0.04));
+  text-align: center;
+  letter-spacing: -0.025em;
+}
+
+@media (min-width: 768px) {
+  .sky-math-gameover-title {
+    font-size: 3.75rem;
+    margin-bottom: 1rem;
+  }
+}
+
+.sky-math-gameover-stats {
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 1.5rem;
+  border-radius: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  margin-bottom: 3rem;
+  width: 100%;
+  max-width: 24rem;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+}
+
+@media (min-width: 768px) {
+  .sky-math-gameover-stats {
+    padding: 2.5rem;
+  }
+}
+
+.sky-math-gameover-stat-row {
+  display: flex;
+  justify-content: space-between;
+  font-family: ui-monospace, monospace;
+  color: #22d3ee;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  padding-bottom: 0.5rem;
+}
+
+.sky-math-gameover-stat-row:last-child {
+  border-bottom: none;
+}
+
+.sky-math-gameover-stat-value {
+  color: white;
+  font-weight: bold;
+  font-size: clamp(1.125rem, 1.25vw, 1.25rem);
+}
+
+@media (min-width: 768px) {
+  .sky-math-gameover-stat-value {
+    font-size: 1.25rem;
+  }
+}
+
+.sky-math-gameover-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+  max-width: 24rem;
+  align-items: center;
+}
+
+@media (min-width: 640px) {
+  .sky-math-gameover-buttons {
+    flex-direction: row;
+    justify-content: center;
+    max-width: none;
+  }
+}
+
+.sky-math-gameover-btn {
+  background-color: #0891b2;
+  color: white;
+  font-family: 'Bungee', cursive;
+  font-size: clamp(1.25rem, 2vw, 1.5rem);
+  padding: 1.25rem 3rem;
+  border-radius: 9999px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 30px rgba(8, 145, 178, 0.4);
+}
+
+@media (min-width: 768px) {
+  .sky-math-gameover-btn {
+    font-size: 1.5rem;
+  }
+}
+
+.sky-math-gameover-btn:hover {
+  transform: scale(1.05);
+}
+
+.sky-math-gameover-btn:active {
+  transform: scale(0.95);
+}
+
+.sky-math-gameover-btn.menu {
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: none;
+}
+
+.sky-math-gameover-btn.menu:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Animations */
+@keyframes scroll {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 0 2000px;
+  }
+}
+
+@keyframes warp {
+  0% {
+    background-position: 0 0;
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.02);
+  }
+  100% {
+    background-position: 0 4000px;
+    transform: scale(1);
+  }
+}
+
+@keyframes shake {
+  0%, 100% {
+    transform: translate(0, 0);
+  }
+  10%, 30%, 50%, 70%, 90% {
+    transform: translate(-5px, 0);
+  }
+  20%, 40%, 60%, 80% {
+    transform: translate(5px, 0);
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes pulseShield {
+  0%, 100% {
+    opacity: 0.6;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.05);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes zoomIn {
+  from {
+    transform: scale(0.95);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* Shake animation class */
+.animate-shake {
+  animation: shake 0.2s ease-in-out;
+}
+
+/* SVG Styles */
+.sky-math-svg {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  width: 100%;
+  height: 100%;
+}
+
+.sky-math-target-text {
+  font-size: 1.875rem;
+  fill: white;
+  filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.1));
+  user-select: none;
+}
+
+.sky-math-floating-text {
+  font-size: 1.25rem;
+  filter: drop-shadow(0 10px 15px rgba(0, 0, 0, 0.1));
+  user-select: none;
+}
+
+.sky-math-shield-effect {
+  animation: pulseShield 2s ease-in-out infinite;
+}
+
+.sky-math-engine-fire {
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+/* HUD Styles */
+.sky-math-hud {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  user-select: none;
+  z-index: 40;
+  padding: 1.5rem;
+}
+
+.sky-math-hud-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.sky-math-hud-left {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  pointer-events: auto;
+}
+
+.sky-math-score-box {
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.8);
+  border: 1px solid rgba(6, 182, 212, 0.3);
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  min-width: 160px;
+  box-shadow: 0 0 20px rgba(6, 182, 212, 0.1);
+}
+
+.sky-math-score-label {
+  color: rgba(6, 182, 212, 0.6);
+  font-family: ui-monospace, monospace;
+  font-size: 0.5625rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.sky-math-score-value {
+  color: #22d3ee;
+  font-size: 1.875rem;
+  font-family: 'Bungee', cursive;
+  line-height: 1;
+}
+
+.sky-math-health-shield-box {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(4px);
+}
+
+.sky-math-health-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 0.25rem;
+}
+
+.sky-math-health-label {
+  font-size: 0.625rem;
+  color: #f87171;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: -0.025em;
+}
+
+.sky-math-health-bars {
+  display: flex;
+  gap: 0.375rem;
+}
+
+.sky-math-health-bar {
+  width: 1rem;
+  height: 0.5rem;
+  border-radius: 0.125rem;
+  transition: all 0.5s ease;
+}
+
+.sky-math-health-bar.active {
+  background-color: #ef4444;
+  box-shadow: 0 0 10px rgba(239, 68, 68, 0.7);
+}
+
+.sky-math-health-bar.inactive {
+  background-color: #1f2937;
+}
+
+.sky-math-shield-row {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  padding: 0 0.25rem;
+}
+
+.sky-math-shield-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sky-math-shield-label {
+  font-size: 0.625rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: -0.025em;
+  transition: color 0.3s ease;
+}
+
+.sky-math-shield-label.ready {
+  color: #22d3ee;
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+.sky-math-shield-label.not-ready {
+  color: #0891b2;
+}
+
+.sky-math-shield-value {
+  font-size: 0.625rem;
+  color: #155e75;
+  font-family: ui-monospace, monospace;
+}
+
+.sky-math-shield-bar-container {
+  width: 100%;
+  height: 0.375rem;
+  background-color: #111827;
+  border-radius: 9999px;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 1px;
+}
+
+.sky-math-shield-bar {
+  height: 100%;
+  transition: all 0.5s ease;
+  border-radius: 9999px;
+}
+
+.sky-math-shield-bar.ready {
+  background-color: #22d3ee;
+  box-shadow: 0 0 15px rgba(34, 211, 238, 0.8);
+}
+
+.sky-math-shield-bar.not-ready {
+  background-color: #0891b2;
+}
+
+.sky-math-hud-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 0.75rem;
+}
+
+.sky-math-pause-btn {
+  pointer-events: auto;
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(4px);
+  cursor: pointer;
+}
+
+.sky-math-pause-btn:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.sky-math-pause-btn-bars {
+  display: flex;
+  gap: 0.25rem;
+}
+
+.sky-math-pause-btn-bar {
+  width: 0.375rem;
+  height: 1rem;
+  background-color: white;
+  border-radius: 0.125rem;
+  transition: transform 0.3s ease;
+}
+
+.sky-math-pause-btn:hover .sky-math-pause-btn-bar {
+  transform: scaleY(1.1);
+}
+
+.sky-math-pause-btn-bar.delay {
+  transition-delay: 75ms;
+}
+
+.sky-math-level-box {
+  background-color: rgba(0, 0, 0, 0.8);
+  border: 1px solid rgba(59, 130, 246, 0.3);
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+  text-align: right;
+  min-width: 120px;
+  box-shadow: 0 0 15px rgba(59, 130, 246, 0.1);
+}
+
+.sky-math-level-label {
+  color: rgba(59, 130, 246, 0.6);
+  font-family: ui-monospace, monospace;
+  font-size: 0.5625rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.sky-math-level-value {
+  color: #60a5fa;
+  font-size: 1.5rem;
+  font-family: 'Bungee', cursive;
+  line-height: 1.25;
+}
+
+.sky-math-streak {
+  color: #facc15;
+  font-family: 'Bungee', cursive;
+  font-size: 1.25rem;
+  filter: drop-shadow(0 0 10px rgba(234, 179, 8, 0.5));
+  animation: bounce 1s infinite;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-25%);
+  }
+}
+
+.sky-math-question-container {
+  position: absolute;
+  top: 8%;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 36rem;
+}
+
+.sky-math-question-wrapper {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.sky-math-question-glow {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(6, 182, 212, 0.05);
+  filter: blur(24px);
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+.sky-math-question-box {
+  background-color: rgba(15, 23, 42, 0.4);
+  backdrop-filter: blur(16px);
+  border-top: 1px solid rgba(6, 182, 212, 0.3);
+  border-bottom: 1px solid rgba(6, 182, 212, 0.3);
+  padding: 1rem 3rem;
+  border-radius: 9999px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 320px;
+}
+
+.sky-math-question-grid {
+  position: absolute;
+  inset: 0;
+  opacity: 0.05;
+  background-image: linear-gradient(to right, rgba(128, 128, 128, 0.07) 1px, transparent 1px),
+                    linear-gradient(to bottom, rgba(128, 128, 128, 0.07) 1px, transparent 1px);
+  background-size: 15px 15px;
+}
+
+.sky-math-question-label {
+  color: rgba(34, 211, 238, 0.4);
+  font-family: ui-monospace, monospace;
+  font-size: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.4em;
+  margin-bottom: 0.25rem;
+}
+
+.sky-math-question-equation {
+  color: white;
+  font-size: 3rem;
+  font-family: 'Bungee', cursive;
+  letter-spacing: 0.05em;
+  white-space: nowrap;
+  filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.2));
+}
+
+.sky-math-corner-accent {
+  position: absolute;
+  bottom: 1.5rem;
+  width: 6rem;
+  height: 6rem;
+  border-left: 2px solid rgba(6, 182, 212, 0.1);
+  border-bottom: 2px solid rgba(6, 182, 212, 0.1);
+  border-bottom-left-radius: 1rem;
+}
+
+.sky-math-corner-accent.left {
+  left: 1.5rem;
+}
+
+.sky-math-corner-accent.right {
+  right: 1.5rem;
+  border-left: none;
+  border-right: 2px solid rgba(6, 182, 212, 0.1);
+  border-bottom-right-radius: 1rem;
+}
+
+/* Notification System Styles */
+.sky-math-notification-container {
+  position: fixed;
+  bottom: 2.5rem;
+  right: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  z-index: 50;
+  pointer-events: none;
+  align-items: flex-end;
+}
+
+.sky-math-notification-item {
+  border-right: 4px solid;
+  padding: 0.625rem 1.25rem;
+  border-radius: 0.5rem 0 0 0.5rem;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  backdrop-filter: blur(4px);
+  font-family: ui-monospace, monospace;
+  font-size: 0.625rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  min-width: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid;
+  border-bottom: 1px solid;
+  border-left: 1px solid;
+  animation: slideIn 0.2s ease-out;
+}
+
+.sky-math-notification-item.info {
+  background-color: rgba(23, 37, 84, 0.8);
+  border-color: rgba(59, 130, 246, 0.3);
+  color: #60a5fa;
+}
+
+.sky-math-notification-item.success {
+  background-color: rgba(20, 83, 45, 0.8);
+  border-color: rgba(34, 197, 94, 0.3);
+  color: #4ade80;
+}
+
+.sky-math-notification-item.warning {
+  background-color: rgba(127, 29, 29, 0.8);
+  border-color: rgba(239, 68, 68, 0.3);
+  color: #f87171;
+}
+
+.sky-math-notification-message {
+  font-weight: bold;
+}
+
+.sky-math-notification-indicator {
+  width: 0.25rem;
+  height: 0.25rem;
+  border-radius: 9999px;
+  background-color: currentColor;
+  margin-left: 1rem;
+  animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
+}
+
+@keyframes ping {
+  75%, 100% {
+    transform: scale(2);
+    opacity: 0;
+  }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .sky-math-container {
+    padding: 1rem;
+  }
+  
+  .sky-math-subtitle {
+    letter-spacing: 0.1em;
+  }
+}

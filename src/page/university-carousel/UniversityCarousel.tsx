@@ -1,0 +1,64 @@
+// src/UniversityCarousel.tsx
+import React, { FC } from "react";
+import Marquee from "react-fast-marquee";
+import { Card, Typography } from "antd";
+import { useTranslation } from "react-i18next";
+import { Slide } from "react-awesome-reveal";
+
+import school1 from "../../assets/images/school/r11.png";
+import school2 from "../../assets/images/school/r12.png";
+import school3 from "../../assets/images/school/r13.png";
+import school4 from "../../assets/images/school/r14.png";
+import school5 from "../../assets/images/school/r21.png";
+import school6 from "../../assets/images/school/r22.png";
+import school7 from "../../assets/images/school/r23.png";
+import school8 from "../../assets/images/school/r24.png";
+import school9 from "../../assets/images/school/r31.png";
+import school10 from "../../assets/images/school/r32.png";
+import school11 from "../../assets/images/school/r33.png";
+import school12 from "../../assets/images/school/r34.png";
+
+const { Title } = Typography;
+
+const UniversityCarousel: FC = () => {
+  const { t } = useTranslation();
+
+  const schools = [
+    { name: "school1", logo: school1 },
+    { name: "school2", logo: school2 },
+    { name: "school3", logo: school3 },
+    { name: "school4", logo: school4 },
+    { name: "school5", logo: school5 },
+    { name: "school6", logo: school6 },
+    { name: "school7", logo: school7 },
+    { name: "school8", logo: school8 },
+    { name: "school9", logo: school9 },
+    { name: "school10", logo: school10 },
+    { name: "school11", logo: school11 },
+    { name: "school12", logo: school12 },
+  ];
+
+  return (
+    <div style={{ margin: "60px 0" }}>
+      <Slide direction="up" triggerOnce>
+        <Title level={3} style={{ textAlign: "center", marginBottom: "40px" }}>
+          {t("about.partners.title", "Our Academic Partners")}
+        </Title>
+      </Slide>
+
+      <Marquee speed={50} pauseOnHover={true} loop={0}>
+        {schools.map((school, index) => (
+          <div key={index} style={{ margin: "0 40px" }}>
+            <img
+              src={school.logo}
+              alt={`${school.name} logo`}
+              style={{ height: "60px", width: "auto" }}
+            />
+          </div>
+        ))}
+      </Marquee>
+    </div>
+  );
+};
+
+export default UniversityCarousel;

@@ -1,0 +1,65 @@
+/* src/page/innovative-tech-tours/InnovativeTechTours.css */
+/* 按钮hover效果 */
+.ant-btn-default {
+  transition: all 0.3s ease-in-out;
+}
+
+.ant-btn-default:hover {
+  background-color: #6d28d9 !important;
+  color: #fff !important;
+  border-color: #6d28d9 !important;
+  transform: translateY(-2px);
+}
+
+/* 实心按钮样式 */
+.solid-btn {
+  background-color: #6d28d9 !important;
+  color: #fff !important;
+}
+
+.solid-btn:hover {
+  background-color: #5b21b6 !important;
+  border-color: #5b21b6 !important;
+}
+
+/* 核心支柱卡片hover效果 */
+.pillar-card {
+  transition: all 0.4s ease !important;
+}
+
+.pillar-card:hover {
+  transform: translateY(-8px) !important;
+  box-shadow: 0 12px 32px rgba(109, 40, 217, 0.15) !important;
+}
+
+/* 技术栈图标样式 */
+.tech-item {
+  transition: all 0.3s ease !important;
+}
+
+.tech-item:hover {
+  background-color: rgba(109, 40, 217, 0.05) !important;
+  transform: scale(1.05) !important;
+}
+
+/* 响应式适配 */
+@media (max-width: 576px) {
+  .ant-steps-vertical {
+    padding-left: 0 !important;
+  }
+  .ant-steps-item {
+    margin-bottom: 24px !important;
+  }
+  .ant-space {
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+  }
+  .ant-typography-title {
+    font-size: 24px !important;
+  }
+}
+
+body {
+  font-family: 'Noto Sans', 'Inter', sans-serif;
+}
+

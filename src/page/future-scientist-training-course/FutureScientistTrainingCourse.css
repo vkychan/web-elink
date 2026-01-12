@@ -1,0 +1,46 @@
+/* 模拟ghost按钮hover效果 + 响应式适配 */
+.custom-ghost-btn {
+  transition: all 0.3s ease;
+}
+
+.custom-ghost-btn:hover {
+  background-color: #6d28d9 !important;
+  color: #fff !important;
+  border-color: #6d28d9 !important;
+}
+
+/* 移动端适配 */
+@media (max-width: 576px) {
+  /* 英雄区高度调整 */
+  div[style*="height: 50vh"] {
+    height: 70vh !important;
+  }
+  /* 移动端标题字体 */
+  .ant-typography {
+    font-size: 14px !important;
+  }
+  .ant-typography-title {
+    font-size: 22px !important;
+  }
+  /* 卡片内边距 */
+  .ant-card-body {
+    padding: 16px !important;
+  }
+  /* 轮播箭头移动端适配 */
+  .ant-carousel .ant-btn {
+    width: 36px !important;
+    height: 36px !important;
+    font-size: 14px !important;
+  }
+}
+
+/* 确保字体为现代无衬线字体 */
+body {
+  font-family: 'Noto Sans', 'Inter', sans-serif;
+}
+
+/* 修复卡片hover效果 */
+.ant-card-hoverable:hover {
+  box-shadow: 0 6px 16px rgba(111, 66, 193, 0.15) !important;
+}
+

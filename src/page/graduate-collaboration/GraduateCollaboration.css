@@ -1,0 +1,15 @@
+.graduate-steps-container .ant-steps-item-description {
+  max-width: 350px !important;
+  white-space: normal;
+}
+
+.ant-steps-item-title {
+    color: rgba(0, 0, 0, 0.45);
+    font-weight: bold;
+}
+
+@media (min-width: 768px) {
+  .graduate-steps-container .ant-steps-item-description {
+    max-width: 250px !important;
+  }
+}

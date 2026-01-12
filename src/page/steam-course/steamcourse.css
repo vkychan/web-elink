@@ -1,0 +1,10 @@
+/* 针对手机等窄屏（宽度小于768px）的适配 */
+@media (max-width: 768px) {
+  .ai-education-contact-button {
+    padding: 12px 20px !important; /* 进一步减小内边距 */
+    font-size: 16px !important; /* 缩小字体 */
+  }
+  .ai-education-contact-button .anticon {
+    margin-left: 8px !important; /* 缩小图标间距 */
+  }
+}

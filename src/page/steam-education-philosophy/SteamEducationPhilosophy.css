@@ -1,0 +1,11 @@
+.skill-item-hover {
+  padding: 12px;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+  text-align: left;
+  cursor: default;
+}
+
+.skill-item-hover:hover {
+  background-color: #1c1c1e; 
+}

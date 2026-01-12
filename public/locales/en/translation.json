@@ -1,0 +1,789 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About Us",
+    "services": "Services",
+    "contact": "Contact",
+    "menu": "Menu"
+  },
+  "footer": {
+    "copyright": "© 2025 eLink I&T Alliance Ltd. All rights reserved."
+  },
+  "lang": {
+    "en": "English",
+    "zh": "繁體中文",
+    "zh-CN": "简体中文"
+  },
+  "Language": "Language",
+  "carousel": {
+    "slide1": {
+      "title": "Collaborative Planning for Postgraduate Education",
+      "desc": "Building international partnerships for advanced degrees and research."
+    },
+    "slide2": {
+      "title": "STEAM Education",
+      "desc": "Integrating arts and sciences to foster creativity and innovation."
+    },
+    "slide3": {
+      "title": "Government-Industry-Academia-Research-Application Project Collaboration",
+      "desc": "Cross-sector partnerships that turn research into real-world solutions."
+    }
+  },
+  "about": {
+    "pageTitle": "Our Mission & Ecosystem",
+    "description": "eLink strategically targets the commanding heights of future technology and industrial development, including Artificial Intelligence (AI), the Metaverse, Blockchain, Edge Computing, and 5G/6G. We gather experts in fields such as AI and blockchain from domestic and international institutions of higher learning and scientific research organizations. It combines their expertise with the years of practical experience from technology enterprises in commercial informatization and digital intelligence.",
+    "summary": "eLink targets the commanding heights of future tech like AI, Metaverse, and 6G. Through the 'Cross-border E-commerce Committee', we act as a bridge, organizing experts to tackle core technical challenges and accelerate the fusion of AI with the digital commerce ecosystem.",
+    "button": "Learn More",
+    "ecosystemTitle": "Our Collaborative Ecosystem",
+    "pillars": {
+      "academia": {
+        "title": "Academia: The Bridge",
+        "desc": "Connecting government policies with enterprise needs, we organize forums and match resources to help businesses thrive."
+      },
+      "institutions": {
+        "title": "Institutions: Expert Think Tank",
+        "desc": "Partnering with top universities like Tsinghua and Peking, our network includes PhD-level experts in AI, blockchain, and fintech."
+      },
+      "tech": {
+        "title": "Tech Partners: Optimal Solutions",
+        "desc": "Leveraging industry leaders like IBM, Oracle, and Cisco, we provide mature solutions, consulting, and implementation services."
+      },
+      "commercial": {
+        "title": "Commercial Partners: Application Scenarios",
+        "desc": "We jointly select projects to ensure technology is market-oriented and directly accelerates enterprise digital transformation."
+      }
+    },
+    "steam": {
+      "title": "STEAM Education Initiatives",
+      "desc": "Beyond business, we are committed to nurturing the next generation of innovators. We champion an integrated STEAM (Science, Technology, Engineering, Arts, and Mathematics) approach to foster creativity, critical thinking, and problem-solving skills.",
+      "focusAreas": "Focus Areas:",
+      "area1": "Robotics and AI Literacy Workshops",
+      "area2": "Creative Coding and Game Design Programs",
+      "area3": "Digital Arts and Virtual Reality Projects",
+      "button": "Our STEAM Philosophy"
+    },
+    "partners": {
+      "title": "Our Academic Partners"
+    }
+  },
+  "partners": {
+    "title": "Business Partners",
+    "finance": {
+      "title": "Finance/Technology"
+    },
+    "network": {
+      "title": "Network & Data Analysis Technology"
+    }
+  },
+  "services": {
+    "title": "Our Services",
+    "item1": {
+      "title": "Graduate Education Cooperation",
+      "desc": "Strategic planning and consulting for postgraduate educational partnerships."
+    },
+    "item2": {
+      "title": "STEAM Education",
+      "desc": "Developing and implementing innovative STEAM educational programs."
+    },
+    "item3": {
+      "title": "Collaborative Projects",
+      "desc": "Fostering projects between government, industry, academia, and research."
+    },
+    "button": "Learn More ->"
+  },
+  "pastEvents": {
+    "title": "Past Events",
+    "item1": {
+      "title": "Academic Journal: JEBDE",
+      "desc": "Co-founded the \"Journal of Electronic Business & Digital Economics\" with leading academic institutions."
+    },
+    "item2": {
+      "title": "Collaborative Research",
+      "desc": "Driving industry innovation through R&D in digital intelligence, AI, and big data applications."
+    },
+    "item3": {
+      "title": "Conferences & Forums",
+      "desc": "Organizing academic seminars, themed lectures, and industry forums to foster collaboration."
+    },
+    "button": "Learn More ->"
+  },
+  "contact": {
+    "ycchan": "YC Chan",
+    "oscarchan": "Oscar Chan",
+    "director": "Director",
+    "program-director": "Program Director",
+    "title": "Get In Touch",
+    "description": "We'd love to hear from you. Please fill out the form below or contact us using the information provided.",
+    "formTitle": "Send Us a Message",
+    "nameLabel": "Your Name",
+    "namePlaceholder": "John Doe",
+    "nameRule": "Please enter your name!",
+    "emailLabel": "Your Email",
+    "emailPlaceholder": "your.email@example.com",
+    "emailRule": "Please enter a valid email!",
+    "phoneLabel": "Phone Number",
+    "phonePlaceholder": "+852 1234 5678",
+    "phoneRule": "Please enter your phone number!",
+    "messageLabel": "Message",
+    "messagePlaceholder": "How can we help you?",
+    "messageRule": "Please enter your message!",
+    "sendButton": "Send Message",
+    "status": {
+      "sending": "Sending message...",
+      "success": "Message sent successfully!",
+      "error": "Failed to send message. Please try again."
+    },
+    "infoTitle": "Contact Information",
+    "address": "Unit 15, 16/F, International Trade Center, 11-18 Sha Tsui Road, Tsuen Wan, N.T. Hong Kong.",
+    "followTitle": "Follow Us",
+    "mapTitle": "Office Location",
+    "keyContactsTitle": "Key Contacts",
+    "cooperationTitle": "University and Business Collaboration",
+    "steamTitle": "STEAM Education"
+  },
+  "steam": {
+    "title": "STEAM Education",
+    "goals": {
+      "title": "Our Three Major Goals",
+      "goal1": "To cultivate students' interest in science, making them scientifically literate and laying a solid foundation for future development.",
+      "goal2": "To learn cutting-edge skills like programming and AI, keeping pace with 21st-century tech and preparing for the future workplace.",
+      "goal3": "To prepare for science and innovation competitions by applying learned skills to practical scenarios, enhancing comprehensive abilities and competitiveness."
+    },
+    "programs": {
+      "title": "Our Programs and Services",
+      "program1": {
+        "title": "eLink Future Scientist Training Course",
+        "desc": "A comprehensive curriculum designed to build core scientific principles and experimental skills."
+      },
+      "program2": {
+        "title": "eLink Programming & AI - Innovative STEAM Course",
+        "desc": "Explore the worlds of coding and artificial intelligence through hands-on, creative projects."
+      },
+      "program3": {
+        "title": "Astronomer Experience Program",
+        "desc": "An immersive program that lets students explore the cosmos with advanced tools and expert guidance."
+      },
+      "program4": {
+        "title": "Innovative Tech: Competitions, Experiences & Tours",
+        "desc": "Engage in competitive challenges, gain practical experience, and join exchange tours with leading institutions."
+      }
+    },
+    "mentors": {
+      "title": "Expert Mentor Team",
+      "desc": "Our strength lies in our instructors, who provide students with unparalleled knowledge and real-world insights.",
+      "point1": "University researchers and PhD-level experts",
+      "point2": "Experienced industry professionals from leading tech firms",
+      "point3": "Passionate educators with proven teaching records"
+    }
+  },
+  "journal": {
+    "title": "JEBDE Academic Journal",
+    "subtitle": "The Journal of Electronic Business & Digital Economics",
+    "about": {
+      "title": "About the Journal",
+      "desc": "Co-founded with leading academic institutions, JEBDE is a peer-reviewed journal dedicated to advancing research and practice in the fields of electronic business and the digital economy. It serves as a premier platform for academics, researchers, and industry professionals to share innovative ideas and impactful findings."
+    },
+    "cta": {
+      "title": "Explore the Full Collection",
+      "desc": "Visit the official page on Emerald Publishing for the latest issues, submission guidelines, and editorial board information.",
+      "button": "Visit Emerald Page"
+    },
+    "previews": {
+      "title": "Featured Issues",
+      "download": "Download PDF"
+    },
+    "issue": {
+      "title": "Latest Issue",
+      "desc": "Explore the latest research and insights in electronic business and digital economics.",
+      "coverAlt": "JEBDE Journal Cover",
+      "contents": "Contents",
+      "download": "Download Full Issue"
+    }
+  },
+  "common": {
+    "back": "Back"
+  },
+  "collaborativeProject": {
+    "title": "Government, Industry, Academia & Research Collaborative Projects",
+    "main": {
+      "item1": {
+        "title": "Research on Passenger Growth Forecasting Models",
+        "desc": "Analyzing complex passenger traffic data and various influencing factors to provide crucial data support for strategic planning, operational adjustments, and efficient resource allocation."
+      },
+      "item2": {
+        "title": "Research on Tenant Renewal Rate Analysis Models",
+        "desc": "Developing predictive models to analyze tenant renewal rates, identifying key factors to provide businesses with data-driven insights for decision-making and improved tenant retention."
+      },
+      "item3": {
+        "title": "Research on Optimal Big Data Architecture",
+        "desc": "Focusing on building scalable, efficient, and reliable big data architectures to replace traditional systems in large-scale, high-concurrency data environments."
+      }
+    },
+    "completed": {
+      "title": "Completed Research Projects",
+      "item1": "Research on O2O Consumer Behavior in Large Shopping Mall Scenarios",
+      "item2": "Analysis Model for Personal Preferences Based on Customer Shopping Basket Data",
+      "item3": "Test Model for Online Social Scenarios Based on Facial Recognition Technology",
+      "item4": "Fintech Cash Flow Technology Based on Blockchain Technology"
+    }
+  },
+  "graduate": {
+    "title": "Postgraduate Education Cooperation",
+    "subtitle": "We partner with global higher education institutions to co-create distinctive postgraduate programs (Master's/PhD) that equip students for future excellence.",
+    "features": {
+      "title": "Our Approach to Collaboration",
+      "feature1": {
+        "title": "Global University Network",
+        "desc": "Leveraging our extensive network of top-tier universities worldwide to find the perfect partner for your program."
+      },
+      "feature2": {
+        "title": "Dual-Location Programs",
+        "desc": "Students can immerse themselves in different cultures and environments, enriching their academic and personal growth."
+      },
+      "feature3": {
+        "title": "Practical Industry Integration",
+        "desc": "Our curriculum includes hands-on projects with industry partners, connecting students with the latest real-world challenges."
+      },
+      "feature4": {
+        "title": "Customized Curriculum Design",
+        "desc": "We work with you to build a unique curriculum that meets the specific needs of your students and the demands of the modern workplace."
+      }
+    },
+    "structure": {
+      "title": "Our Collaboration Process",
+      "step1": {
+        "title": "Consult & Plan",
+        "desc": "We begin by understanding your goals and vision for the new postgraduate program."
+      },
+      "step2": {
+        "title": "Co-Create Curriculum",
+        "desc": "We collaborate with partner institutions to design a unique, impactful, and practical curriculum."
+      },
+      "step3": {
+        "title": "Launch & Support",
+        "desc": "We assist with the program launch and provide ongoing support to ensure its success and sustainability."
+      }
+    },
+    "cta": {
+      "title": "Let's Build the Future of Education Together",
+      "desc": "Contact us to explore how we can create a world-class postgraduate program for your institution.",
+      "button": "Partner With Us"
+    }
+  },
+  "forums": {
+    "title": "Conferences & Industry Forums",
+    "subtitle": "We bridge the gap between academia and industry by organizing impactful seminars, lectures, and forums to foster collaboration and share cutting-edge knowledge.",
+    "features": {
+      "title": "Why We Host Events",
+      "feature1": {
+        "title": "Share Knowledge",
+        "desc": "Presenting the latest research and industry trends in digital intelligence, AI, and big data applications."
+      },
+      "feature2": {
+        "title": "Foster Dialogue",
+        "desc": "Creating a platform for open discussion and Q&A sessions between experts and attendees."
+      },
+      "feature3": {
+        "title": "Promote Collaboration",
+        "desc": "Connecting industry, academia, and research to spark new partnerships and drive innovation."
+      }
+    },
+    "pastEventsTitle": "Featured Past Events",
+    "events": {
+      "event1": {
+        "eventType": "Academic Themed Lecture",
+        "title": "New Opportunities in Digital Intelligence, Win-Win to Create the Future",
+        "date": "May 31, 2023",
+        "summary": "This lecture focused on the application of digital intelligence and AI in business, promoting the deep integration of industry and research."
+      },
+      "event2": {
+        "eventType": "Industry Forum",
+        "title": "The Future of FinTech and Blockchain",
+        "date": "November 12, 2023",
+        "summary": "A forum exploring the impact of blockchain on financial services, digital currency trends, and regulatory challenges."
+      },
+      "event3": {
+        "eventType": "Cross-Border eCommerce Seminar",
+        "title": "Innovations in Global eCommerce Logistics",
+        "date": "March 22, 2024",
+        "summary": "A deep-dive seminar on leveraging AI and big data to optimize supply chains and enhance the cross-border customer experience."
+      }
+    },
+    "cta": {
+      "title": "Interested in Collaborating?",
+      "desc": "Partner with us to organize your next industry forum, academic seminar, or workshop.",
+      "button": "Contact Us"
+    }
+  },
+  "research": {
+    "title": "Collaborative Research",
+    "subtitle": "Driving industry innovation through R&D in digital intelligence, AI, and big data applications.",
+    "areas": {
+      "title": "Our Key Research Areas",
+      "area1": {
+        "title": "Digital Intelligence",
+        "desc": "We explore how businesses can leverage digital intelligence to optimize operations, enhance decision-making, and create new value."
+      },
+      "area2": {
+        "title": "Artificial Intelligence",
+        "desc": "Our R&D focuses on practical AI applications, from predictive analytics and machine learning models to natural language processing."
+      },
+      "area3": {
+        "title": "Big Data Applications",
+        "desc": "We develop solutions to process and analyze massive datasets, unlocking actionable insights and driving data-centric strategies."
+      }
+    },
+    "caseStudy": {
+      "tag": "Case Study",
+      "title": "O2O Consumer Behavior Analytics",
+      "desc": "In partnership with a major retail group, we conducted in-depth research on consumer behavior in large-scale shopping malls, leveraging data to bridge the online-to-offline gap. Key outcomes included:",
+      "point1": "Developed a predictive model for foot traffic and purchasing patterns.",
+      "point2": "Identified key drivers for repeat visits and customer loyalty.",
+      "point3": "Provided actionable recommendations for personalized marketing campaigns."
+    },
+    "cta": {
+      "title": "Have a Research Challenge?",
+      "desc": "Let's collaborate to turn your complex industry problems into data-driven solutions and innovative breakthroughs.",
+      "button": "Start a Project"
+    }
+  },
+  "steamPhilosophy": {
+    "hero": {
+      "title": "Don't Let Your Child Become an I-Shaped Specialist.",
+      "subtitle": "A STEAM Education Guide for Parents on the Path to Becoming a T-Shaped Generalist."
+    },
+    "intro": {
+      "p1": "When AlphaGo defeated the world champion, and AI art won top awards, a wave of anxiety swept through parenting circles: Does my child have to learn programming? Do they need to understand AI? The answer is yes, but that's far from the whole story.",
+      "p2": "The true goal of STEAM education has never been to train programmers or AI engineers, but to cultivate 'T-shaped changemakers' who can master technology to solve unknown problems."
+    },
+    "part1": {
+      "title": "The Future is Calling: Goodbye I-Talent, Hello T-Talent",
+      "iTalent": {
+        "title": "The I-Shaped Talent",
+        "desc": "Possesses deep expertise in a specific field, like the letter 'I'. In an era of rapid technological iteration, the protective moat of a single skill is becoming increasingly fragile."
+      },
+      "tTalent": {
+        "title": "The T-Shaped Talent",
+        "desc": "Not only has the vertical depth of expertise but also the horizontal breadth—encompassing cross-disciplinary knowledge, empathy, collaboration, and a holistic perspective. This is the talent the future truly needs."
+      }
+    },
+    "wefSkills": {
+      "title": "Top 10 Fastest-Growing Skills by 2030",
+      "subtitle": "According to the World Economic Forum's 'Future of Jobs Report'",
+      "skill1": "AI and Big Data",
+      "skill2": "Networks and Cybersecurity",
+      "skill3": "Technological Literacy",
+      "skill4": "Creative Thinking",
+      "skill5": "Resilience, Flexibility, and Agility",
+      "skill6": "Curiosity and Lifelong Learning",
+      "skill7": "Leadership and Social Influence",
+      "skill8": "Talent Management",
+      "skill9": "Analytical Thinking",
+      "skill10": "Environmental Stewardship"
+    },
+    "part2": {
+      "title": "Part 2: The Developmental Blueprint",
+      "subtitle": "How can we cultivate such 'T-shaped' talent? The answer: follow their natural development. We must align innovation education with a 'developmental guide' based on established psychological principles.",
+      "perspectiveTitle": "Psychological Perspective",
+      "focusTitle": "Educational Focus",
+      "stage1": {
+        "title": "Stage 1 (Ages 4-7): Hands-On Exploration, Sowing the Seeds of Curiosity",
+        "psychology": "Preoperational Stage | Initiative vs. Guilt",
+        "perspectiveDesc": "Children at this age are in Piaget's 'Preoperational Stage', understanding the world through senses and concrete actions. They are also in Erikson's 'Initiative vs. Guilt' phase, filled with a desire to explore and an infinite imagination.",
+        "focusDesc": "Play-based Learning. The goal is to protect and stimulate curiosity. Education should provide a rich, safe environment for them to build a basic understanding of the physical world through touch, observation, and feeling.",
+        "discipline": {
+          "s": {
+            "letter": "S",
+            "desc": "Sensory exploration: playing with water, sand, observing plant growth."
+          },
+          "t": {
+            "letter": "T",
+            "desc": "Unplugged programming through physical command card games."
+          },
+          "e": {
+            "letter": "E",
+            "desc": "Free construction with building blocks and LEGOs."
+          },
+          "a": {
+            "letter": "A",
+            "desc": "Free creation and self-expression through art."
+          },
+          "m": {
+            "letter": "M",
+            "desc": "Pattern recognition through classifying and tidying up."
+          }
+        }
+      },
+      "stage2": {
+        "title": "Stage 2 (Ages 7-12): Constructing Logic, a Bridge from Concrete to Abstract",
+        "psychology": "Concrete Operational Stage | Industry vs. Inferiority",
+        "perspectiveDesc": "Children enter Piaget's 'Concrete Operational Stage,' where logical thinking emerges but still relies on concrete objects. In Erikson's 'Industry vs. Inferiority' phase, they are driven to gain a sense of accomplishment by mastering new skills.",
+        "focusDesc": "Project-Based Learning (PBL). This is the golden period to combine logical thinking with hands-on ability. The goal is to guide them to use technology to solve tangible problems, giving them a real sense of competence.",
+        "discipline": {
+          "sm": {
+            "letter": "Science & Math",
+            "desc": "Conduct controlled experiments and learn to record and present data using charts."
+          },
+          "t": {
+            "letter": "Technology",
+            "desc": "Introduce graphical programming like Scratch, which turns abstract commands into draggable, colorful blocks."
+          },
+          "e": {
+            "letter": "Engineering",
+            "desc": "Tackle design challenges and experience the engineering cycle: define, ideate, prototype, test, and refine."
+          },
+          "a": {
+            "letter": "Art",
+            "desc": "Combine coding and AI with art to create interactive digital art installations."
+          }
+        }
+      },
+      "stage3": {
+        "title": "Stage 3 (Ages 12-18): Abstract Thinking, Exploring Infinite Possibilities",
+        "psychology": "Formal Operational Stage | Identity vs. Role Confusion",
+        "perspectiveDesc": "Teenagers reach Piaget's 'Formal Operational Stage,' gaining the ability for abstract thought and hypothetical reasoning. They face Erikson's core task of 'Identity vs. Role Confusion'—answering the question, 'Who am I?'",
+        "focusDesc": "Real-World Problem Solving. The objective is to encourage teens to use their maturing cognitive and technical skills to investigate real social issues, explore personal interests, and thereby build a solid self-identity.",
+        "discipline": {
+          "sm": {
+            "letter": "Science & Math",
+            "desc": "Move from classroom experiments to real-world inquiry. Use languages like Python to analyze public data and discover insights."
+          },
+          "t": {
+            "letter": "Technology",
+            "desc": "Transition from graphical to text-based programming (e.g., Python) to solve more complex problems."
+          },
+          "e": {
+            "letter": "Engineering",
+            "desc": "Engage in social innovation design. Address community issues like recycling or elderly care by designing a feasible prototype solution."
+          },
+          "a": {
+            "letter": "Cross-Disciplinary Integration",
+            "desc": "Participate in robotics competitions, hackathons, or science fairs to fuse all STEAM elements and test core skills like teamwork and project management."
+          }
+        }
+      }
+    },
+    "conclusion": {
+      "title": "Invest in Your Child's Future: Choose the Complete 'T'",
+      "p1": "In this era of change, don't settle for equipping them with a single, seemingly popular 'I-shaped' skill. Choose an educational model that nurtures their nature, fosters cross-disciplinary integration, and encourages lifelong learning.",
+      "p2": "Because we are not just cultivating engineers who can execute commands, but leaders who can define the future and create value."
+    },
+    "courses": {
+      "title": "Our Course Suggestions by Age",
+      "subtitle": "Explore our STEAM programs designed to nurture curiosity, build skills, and foster innovation across different age groups.",
+      "button": "Explore All STEAM Programs",
+      "age_4_7": {
+        "age": "Age 4-7",
+        "title": "Spark Curiosity",
+        "course1": "mTiny",
+        "course2": "Scratch Jr",
+        "course3": "Little Discoverers Science Series"
+      },
+      "age_7_12": {
+        "age": "Age 7-12",
+        "title": "Build Skills",
+        "course1": "Scratch",
+        "course2": "micro:bit (Coding Car, Robotics, Maker)",
+        "course3": "App Inventor",
+        "course4": "3D Printing Maker Lab",
+        "course5": "Delightex (VR/AR/3D)",
+        "course6": "AI Assistant Course",
+        "course7": "Young Science Lab Program",
+        "course8": "Little Astronomer Program",
+        "course9": "National Tech Competition Team"
+      },
+      "age_12_18": {
+        "age": "Age 12-18",
+        "title": "Innovate & Excel",
+        "course1": "Python (Game Design, Data Science)",
+        "course2": "App Inventor",
+        "course3": "3D Printing Maker Lab",
+        "course4": "Delightex (VR/AR/3D)",
+        "course5": "STEAM Design Thinking Maker Lab",
+        "course6": "Future Innovator's AI Application Lab",
+        "course7": "Future Scientist Experience Program",
+        "course8": "Astronomer Experience Program",
+        "course9": "National Tech Competition Team"
+      }
+    }
+  },
+  "career": {
+    "career": "Career",
+    "title": "Careers at eLink I&T Alliance Ltd.",
+    "subtitle": "Join our team and help shape the future of technology and education.",
+    "openPositions": {
+      "title": "Open Positions",
+      "position1": {
+        "title": "Program Coordinator",
+        "desc": "Responsible for organizing and managing educational programs and events."
+      },
+      "position2": {
+        "title": "Research Analyst",
+        "desc": "Conduct research and analysis in digital intelligence, AI, and big data applications."
+      },
+      "position3": {
+        "title": "STEAM Education Specialist",
+        "desc": "Develop and implement innovative STEAM educational programs."
+      }
+    },
+    "cta": {
+      "title": "Ready to Make an Impact?",
+      "desc": "If you're passionate about technology and education, we'd love to hear from you.",
+      "button": "Apply Now"
+    }
+  },
+  "astronomer": {
+    "hero": {
+      "alt": "Journey Beyond the Stars: Astronomer Experience",
+      "mainTitle": "Journey Beyond the Stars",
+      "subTitle": "Astronomer Experience",
+      "desc": "Exploring the mysteries of the cosmos through professional observation and aerospace science.",
+      "cta": "Start Your Journey"
+    },
+    "sections": {
+      "programObjectives": "Program Objectives",
+      "activities": "Activities",
+      "curriculumHighlights": "Curriculum Highlights",
+      "hardwareTools": "Hardware & Tools",
+      "educationalImpact": "Educational Impact"
+    },
+    "activityList": {
+      "activity1": {
+        "name": "Astrological prediction",
+        "desc": "This is an experiential astronomy activity specifically designed for primary and secondary school students and members of the public interested in astronomy. The activities include explanations of astronomical science, immersive experiences in a mobile planetarium, and hands-on stargazing with a dedicated astronomical telescope, aiming to promote public interest in astronomy."
+      },
+      "activity2": {
+        "name": "Stargazing Experience Camp",
+        "desc": "This 2-day, 1-night experiential camp, organized by Elink Innovation Technology, focuses on astronomy. STEAM or other science themes can also be incorporated to align with school/institution plans. Please contact us for more information."
+      },
+      "activity3": {
+        "name": "RGB Workshop",
+        "desc": "This course introduces the relevant knowledge and challenges required for actual astronomical observation and research. Through this course, students will have the opportunity to try creating RGB images of different celestial objects and experience the daily research work of astronomers."
+      },
+      "activity4": {
+        "name": "Activities",
+        "desc": "Past have a lot of activities"
+      }
+    },
+    "objectives": {
+      "keyLearning": {
+        "title": "Key Learning",
+        "desc": "Understanding the Solar System, Constellation Identification, and Telescope Optics."
+      },
+      "handsOnExperience": {
+        "title": "Hands-on Experience",
+        "desc": "Hands-on stargazing sessions and virtual planetarium tours."
+      }
+    },
+    "curriculum": {
+      "nightSkyObservation": {
+        "title": "Night Sky Observation",
+        "desc": "Real-time tracking of celestial bodies with professional guidance."
+      },
+      "spaceTechnology": {
+        "title": "Space Technology",
+        "desc": "Learning about rockets, satellites, and the International Space Station (ISS)."
+      },
+      "astrophysicsLite": {
+        "title": "Astrophysics Lite",
+        "desc": "Simplified concepts of gravity, light years, and planetary motion."
+      }
+    },
+    "hardware": {
+      "professionalTelescopes": "Professional Telescopes",
+      "mobilePlanetariums": "Mobile Planetariums",
+      "astronomicalSoftware": "Astronomical Software"
+    },
+    "impact": {
+      "title": "Global Perspective & Career Readiness",
+      "desc": "This program fosters a global perspective by connecting students to the universal language of astronomy, while igniting long-term interest in aerospace careers. Participants develop critical thinking, patience, and a sense of wonder about the natural world—skills that transcend the classroom and prepare them for future STEM opportunities."
+    },
+    "finalCta": {
+      "title": "Bring the Universe to Your School",
+      "desc": "Our Astronomer Experience program is designed to be flexible for school groups of all sizes. From half-day workshops to full-day immersive experiences, we tailor the curriculum to match your educational goals and student age groups.",
+      "cta": "Contact us"
+    }
+  },
+  "futureScientist": {
+    "hero": {
+      "alt": "Future Scientist Training Program",
+      "mainTitle": "Future Scientist Training Program",
+      "desc": "Empowering the next generation of innovators through hands-on STEAM exploration.",
+      "cta": "Learn More / Inquire Now"
+    },
+    "sections": {
+      "programOverview": "Program Overview",
+      "curriculumHighlights": "Curriculum Highlights",
+      "targetAudience": "Target Audience"
+    },
+    "overview": {
+      "desc": "Our \"Future Scientist\" philosophy moves beyond passive learning to active scientific inquiry—empowering students to ask questions, design experiments, and discover answers through hands-on exploration."
+    },
+    "skills": {
+      "criticalThinking": {
+        "title": "Critical Thinking",
+        "desc": "Learn to analyze information, evaluate evidence, and form logical conclusions."
+      },
+      "collaboration": {
+        "title": "Collaboration",
+        "desc": "Work in teams to share ideas, divide tasks, and achieve common goals."
+      },
+      "problemSolving": {
+        "title": "Problem Solving",
+        "desc": "Apply creative and analytical thinking to solve real-world scientific challenges."
+      }
+    },
+    "curriculum": {
+      "scientificMethod": {
+        "title": "Scientific Method",
+        "desc": "Master observation, hypothesis, experimentation, and conclusion."
+      },
+      "appliedPhysics": {
+        "title": "Applied Physics",
+        "desc": "Explore motion, energy, and forces through hands-on experiments."
+      },
+      "biologicalInquiry": {
+        "title": "Biological Inquiry",
+        "desc": "Study living organisms and their interactions with the environment."
+      },
+      "sustainableTech": {
+        "title": "Sustainable Tech",
+        "desc": "Design solutions for environmental challenges using green technology."
+      }
+    },
+    "audience": {
+      "primary": {
+        "title": "Primary School Students",
+        "desc": "Fun, play-based experiments to spark curiosity and foundational scientific thinking."
+      },
+      "secondary": {
+        "title": "Secondary School Students",
+        "desc": "Advanced projects and inquiry-based learning to build critical thinking and research skills."
+      }
+    },
+    "finalCta": {
+      "title": "Ready to Ignite Curiosity?",
+      "desc": "For schools or parents interested in our Future Scientist Training Program, get in touch to learn more about enrollment, pricing, and customization options.",
+      "cta": "Get In Touch"
+    }
+  },
+  "innovativeTech": {
+    "hero": {
+      "alt": "Coding & AI: Shaping Future Innovators",
+      "mainTitle": "Coding & AI: Shaping Future Innovators",
+      "desc": "Mastery of Python, AI applications, and hardware integration for the leaders of tomorrow.",
+      "cta1": "View Curriculum",
+      "cta2": "Book a Demo"
+    },
+    "sections": {
+      "corePillars": "Core Pillars",
+      "learningPath": "Learning Path",
+      "techStack": "Our Tech Stack"
+    },
+    "pillars": {
+      "codingFoundations": {
+        "title": "Coding Foundations",
+        "desc": "Scratch to Python/C++ - Build a solid programming foundation from visual to text-based coding."
+      },
+      "artificialIntelligence": {
+        "title": "Artificial Intelligence",
+        "desc": "Machine Learning, Facial Recognition, and Voice Control - Apply AI to real-world scenarios."
+      },
+      "hardwareIntegration": {
+        "title": "Hardware Integration",
+        "desc": "Connecting code to the physical world via sensors and robotics - Bring code to life."
+      }
+    },
+    "learningPath": {
+      "beginner": {
+        "title": "Beginner (Level 1)",
+        "desc": "Graphical programming & Basic AI logic - Perfect for students new to coding."
+      },
+      "intermediate": {
+        "title": "Intermediate (Level 2)",
+        "desc": "Python syntax & AI Model training - Build and train simple AI models."
+      },
+      "advanced": {
+        "title": "Advanced (Level 3)",
+        "desc": "Real-world project implementation and Competition prep - Ready for tech challenges."
+      }
+    },
+    "finalCta": {
+      "title": "Ready to bring AI to your classroom?",
+      "desc": "Our Coding & AI program is tailored to equip students with the skills needed to thrive in the digital age. Contact our education consultants to learn more about custom programs, pricing, and implementation.",
+      "cta": "Contact us"
+    }
+  },
+  "steamCourse": {
+    "hero": {
+      "alt": "The Global Stage for Future Innovators",
+      "mainTitle": "The Global Stage for Future Innovators",
+      "desc": "Empowering students to excel in international technology competitions and gain world-class academic perspectives.",
+      "cta1": "Explore Competitions",
+      "cta2": "Inquire for Schools"
+    },
+    "sections": {
+      "competitionExcellence": "Competition Excellence",
+      "competitionDesc": "We provide comprehensive support for leading international technology competitions",
+      "internationalExchange": "International Experience Exchange",
+      "exchangeDesc": "Beyond competitions – global exposure and cultural collaboration",
+      "wallOfFame": "Wall of Fame",
+      "fameDesc": "Celebrating our students' outstanding achievements on the global stage",
+      "globalPartners": "Our Global Partners"
+    },
+    "competitions": {
+      "title": "Major Competitions",
+      "robofest": {
+        "name": "Robofest",
+        "desc": "International robotics competition focusing on autonomous robots and creative problem-solving."
+      },
+      "aiChallenges": {
+        "name": "AI Challenges",
+        "desc": "Global AI hackathons and competitions for developing real-world AI applications."
+      },
+      "roboticsOlympiads": {
+        "name": "Robotics Olympiads",
+        "desc": "Olympiad-style competition testing robotics engineering and programming skills."
+      }
+    },
+    "training": {
+      "title": "Intensive Training & Coaching",
+      "intro": "Our training program combines technical skill-building with competition strategy to ensure participants are fully prepared for the global stage. We offer:",
+      "point1": "8-week intensive technical training led by industry experts",
+      "point2": "Mock competitions with real-time feedback and improvement plans",
+      "point3": "One-on-one coaching for presentation and technical interview skills",
+      "point4": "Access to state-of-the-art robotics and AI equipment for practice",
+      "point5": "Mental preparation and stress management for high-pressure competition environments"
+    },
+    "exchange": {
+      "tag": "Global Experience",
+      "keyValue": "Key Value: ",
+      "valueDesc": "Our exchange programs foster cross-cultural collaboration, provide networking opportunities with global tech experts, and broaden students' horizons beyond technical skills – preparing them to be global citizens and future leaders in technology.",
+      "siliconValley": {
+        "highlight": "Tech company visits and startup mentorship"
+      },
+      "boston": {
+        "highlight": "Ivy League university workshops and lab tours"
+      },
+      "singapore": {
+        "highlight": "Asian tech hub collaboration and innovation labs"
+      }
+    },
+    "success": {
+      "emma": {
+        "quote": "This program gave me the confidence to compete on the global stage and connect with like-minded innovators."
+      },
+      "alex": {
+        "quote": "The intensive training prepared me not just for the competition, but for future STEM careers."
+      },
+      "teamHorizon": {
+        "quote": "Cross-cultural collaboration was the key to our success – we learned as much from others as we taught."
+      }
+    },
+    "finalCta": {
+      "title": "Is your school ready to compete globally?",
+      "desc": "Partner with us to bring world-class competition training and international exposure to your students. Our tailored programs adapt to your school's needs and goals, ensuring maximum impact for your students.",
+      "cta": "Partner With Us"
+    }
+  }
+}
