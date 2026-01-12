@@ -44,3 +44,47 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
+
+============================================================================================
+
+# How to push your code?
+
+# 1. Make sure you are on main and up-to-date
+git checkout main
+git pull origin main               # ← very important!
+
+# 2. Create a new branch (naming is important!)
+# Good branch names examples:
+#   feature/login-page
+#   fix/bug-broken-button-on-mobile
+#   refactor/cleanup-auth-logic
+#   style/improve-button-spacing
+git checkout -b feature/your-feature-name
+
+# 3. Do your work (code, styles, tests...)
+#    ... make changes ...
+
+# 4. Stage & commit (small commits are better!)
+git add .
+git commit -m "feat: added login form validation"
+# or more detailed:
+# git commit -m "fix: prevent submit when email is invalid\n\n- added required check\n- show error message"
+
+# 5. Push your branch to GitHub
+git push origin feature/your-feature-name
+
+# 6. Go to GitHub → create Pull Request
+#    - Title: Clear and short (e.g. "Add login form validation")
+#    - Description: Explain what you did + why + how to test
+#    - Assign reviewer (usually senior or team lead)
+#    - Add labels if your project uses them (feat/fix/refactor/etc)
+
+# After review & fixes:
+# 7. (If requested) make changes on the same branch
+git add .
+git commit -m "fix: address review comments - email regex"
+git push origin feature/your-feature-name
+
+# After PR is approved:
+# 8. Merge (usually **Squash and merge** or **Merge commit** – follow project convention)
+#    → GitHub will delete branch automatically (recommended)
